@@ -22,29 +22,42 @@
         <div class="login-container">
 
             <div class="tabs">
-                <button id="loginTab" class="login-btn">Login</button>
+                <button id="loginTab" class="login-btn active">Login</button>
                 <button id="registerTab" class="login-btn">Register</button>
             </div>
 
             <form id="loginForm" class="form" style="display: block;">
                 <h1>Login to QuizMii</h1>
                 <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="loginUsername" name="username" required>
+                    <label for="username">Username</label>
+                    <input type="text" id="loginUsername" name="username" required>
                 </div>
                 <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="loginPassword" name="password" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
                 </div>
                 <button type="submit" class="submit-btn">Login</button>
                 <p id="error-message" class="error-message"></p>
+            </form>
+
+            <form id="registerForm" class="form" style="display: none;">
+                <h1>Register to QuizMii</h1>
+                <div class="input-group">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
             </form>
             
             </div>
         </div>
     </section>
 
-
+    <script src="login.js"></script>
 
 
 </body>

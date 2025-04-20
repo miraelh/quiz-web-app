@@ -24,3 +24,14 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const password = document.getElementById('loginPassword').value;
     const errorMessage = document.getElementById('error-message');
 });  
+
+
+
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+  
+    const newUsername = document.getElementById('newUsername').value;
+    const newPassword = document.getElementById('newPassword').value;
+});  
+
+
