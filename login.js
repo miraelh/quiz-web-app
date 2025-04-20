@@ -1,3 +1,18 @@
+document.getElementById('loginTab').addEventListener('click', function() {
+    document.getElementById('loginTab').classList.add('active');
+    document.getElementById('registerTab').classList.remove('active');
+    document.getElementById('loginForm').style.display = 'block';
+    document.getElementById('registerForm').style.display = 'none';
+});
+
+document.getElementById('registerTab').addEventListener('click', function() {
+    document.getElementById('registerTab').classList.add('active');
+    document.getElementById('loginTab').classList.remove('active');
+    document.getElementById('loginForm').style.display = 'none';
+    document.getElementById('registerForm').style.display = 'block';
+});
+
+
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
   
