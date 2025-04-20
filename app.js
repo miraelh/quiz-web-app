@@ -27,3 +27,10 @@ function loadQuizzes() {
   }
 
   document.addEventListener('DOMContentLoaded', loadQuizzes);
+
+
+
+  authLinks.innerHTML = `
+      <a href="login.html" class="login-btn">Login</a>
+    `;
+  
