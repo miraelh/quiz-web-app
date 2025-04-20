@@ -27,7 +27,19 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     if (username === adminUser.username && password === adminUser.password) {
         localStorage.setItem('loggedInUser', JSON.stringify(adminUser));
         window.location.href = 'dashboard.html'; 
-      } 
+      } else {
+    
+        const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+        const user = existingUsers.find(u => u.username === username && u.password === password);
+    
+        if (user) {
+            localStorage.setItem('loggedInUser', JSON.stringify(user));
+            window.location.href = 'index.html'; 
+          } else {
+            errorMessage.textContent = 'Invalid username or password. Please try again.';
+          }
+        }
+
 });  
 
 
