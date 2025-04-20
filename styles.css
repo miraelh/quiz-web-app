@@ -151,3 +151,9 @@
         font-size: 1.2rem;
         transition: background-color 0.3s ease;
     }
+
+    .error-message {
+        color: red;
+        text-align: center;
+        font-size: 0.9rem;
+    }
