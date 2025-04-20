@@ -23,6 +23,11 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const username = document.getElementById('loginUsername').value;
     const password = document.getElementById('loginPassword').value;
     const errorMessage = document.getElementById('error-message');
+
+    if (username === adminUser.username && password === adminUser.password) {
+        localStorage.setItem('loggedInUser', JSON.stringify(adminUser));
+        window.location.href = 'dashboard.html'; 
+      } 
 });  
 
 
