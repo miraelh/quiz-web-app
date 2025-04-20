@@ -1,3 +1,7 @@
+
+const adminUser = { username: 'admin@quiz.com', password: 'admin123' };
+
+
 document.getElementById('loginTab').addEventListener('click', function() {
     document.getElementById('loginTab').classList.add('active');
     document.getElementById('registerTab').classList.remove('active');
