@@ -108,5 +108,20 @@
         transition: transform 0.3s ease;
     }
     
-
+    .login-section, .register-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f9;
+    }
+      
+    .login-container, .register-container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
 
