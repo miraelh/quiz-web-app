@@ -44,25 +44,45 @@
         align-items: center;
       }
       
-      .navbar .logo {
+    .navbar .logo {
         font-size: 1.5rem;
         font-weight: bold;
         color: white;
-      }
+    }
       
-      .navbar .auth-links {
+    .navbar .auth-links {
         display: flex;
         gap: 10px;
-      }
+    }
 
-      .cta-btn {
+      
+    .cta-btn {
         padding: 12px 25px;
         background-color: #4CAF50;
         color: white;
         font-size: 1rem;
         border-radius: 5px;
         text-transform: uppercase;
-      }
+    }
       
+    .firstpage {
+        background-size: cover;
+        padding: 80px 0;
+        color: white;
+        text-align: center;
+    }
+    
+    .firstpage-content h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    .firstpage-content p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+
+    
+    
 
 
