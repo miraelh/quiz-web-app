@@ -69,6 +69,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    if (loggedInUser) {
+        const userScores = JSON.parse(localStorage.getItem('userScores')) || {};
+        userScores[loggedInUser.username] = userScores[loggedInUser.username] || [];
+        userScores[loggedInUser.username].push({
+            quiz: quiz.name,
+            score: userAnswers.filter(answer => answer.correct).length
+        });
+        localStorage.setItem('userScores', JSON.stringify(userScores));
+    }
+
     loadQuestion();
 
     document.getElementById('submitQuiz').addEventListener('click', nextQuestion);
