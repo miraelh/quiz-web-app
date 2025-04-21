@@ -157,3 +157,33 @@
         text-align: center;
         font-size: 0.9rem;
     }
+
+
+
+    .dashboard-section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+      
+    .dashboard-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .dashboard-container h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+      
+    .dashboard-container p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #707070;
+    }
+ 
