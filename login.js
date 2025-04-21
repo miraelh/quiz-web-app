@@ -27,7 +27,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     if (username === adminUser.username && password === adminUser.password) {
         localStorage.setItem('loggedInUser', JSON.stringify(adminUser));
         window.location.href = 'dashboard.html'; 
-      } else {
+    } else {
     
         const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
         const user = existingUsers.find(u => u.username === username && u.password === password);
@@ -49,6 +49,18 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
   
     const newUsername = document.getElementById('newUsername').value;
     const newPassword = document.getElementById('newPassword').value;
+
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    const userExists = existingUsers.some(u => u.username === newUsername);
+    if (userExists) {
+        alert('Username already exists. Please log in.');
+    } else {
+        const newUser = { username: newUsername, password: newPassword };
+        existingUsers.push(newUser);
+        localStorage.setItem('users', JSON.stringify(existingUsers));
+        alert('Registration successful! You can now log in.');
+    }
+    
 });  
 
 
