@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const scoreMessage = `You scored ${score} out of ${quiz.questions.length}!`;
 
         document.getElementById('quizQuestions').innerHTML = `<h2>${scoreMessage}</h2>`;
-    
- 
+        document.getElementById('submitQuiz').style.display = 'none';
+     
     }
 
 
