@@ -12,4 +12,25 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentQuestion = 0;
     let score = 0;
 
+
+    function loadQuestion() {
+        const question = quiz.questions[currentQuestion]; 
+        const quizQuestionsElement = document.getElementById('quizQuestions');
+
+        quizQuestionsElement.innerHTML = `
+            <h2>${question.question}</h2>
+            <div class="options">
+                ${question.options.map((option, index) => `
+                    <label>
+                        <input type="radio" name="answer" value="${option}" class="answer-option" data-index="${index}">
+                        ${option}
+                    </label>
+                `).join('')}
+            </div>
+        `;
+    }     
+          
+    loadQuestion();
+
+
 });
