@@ -53,8 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentQuestion < quiz.questions.length - 1) {
             currentQuestion++; 
             loadQuestion();
+        } else {
+            finishQuiz(); 
         }
     }
+
+    function finishQuiz() {
+        let score = userAnswers.filter(answer => answer.correct).length;
+        const scoreMessage = `You scored ${score} out of ${quiz.questions.length}!`;
+
+        document.getElementById('quizQuestions').innerHTML = `<h2>${scoreMessage}</h2>`;
+    
+ 
+    }
+
 
     loadQuestion();
 
