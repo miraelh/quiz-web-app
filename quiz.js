@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         const submitButton = document.getElementById('submitQuiz');
+        submitButton.innerText = currentQuestion === quiz.questions.length - 1 ? 'Finish Quiz' : 'Next Question';
+
     }     
     
     function handleAnswerSelection() {
