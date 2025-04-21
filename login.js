@@ -61,6 +61,7 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
         alert('Registration successful! You can now log in.');
     }
     
+    document.getElementById('registerTab').click();
 });  
 
 
