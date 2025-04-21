@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quiz: quiz.name,
             score: userAnswers.filter(answer => answer.correct).length
         });
+
+        console.log('Saving userScores:', userScores);  
         localStorage.setItem('userScores', JSON.stringify(userScores));
     }
 
