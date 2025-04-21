@@ -71,5 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadQuestion();
 
+    document.getElementById('submitQuiz').addEventListener('click', nextQuestion);
 
 });
