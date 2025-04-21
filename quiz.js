@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentQuestion = 0;
     let score = 0;
+    let userAnswers = [];
 
 
     function loadQuestion() {
