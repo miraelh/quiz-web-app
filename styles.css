@@ -25,6 +25,9 @@
         border: none;
         outline: none;
     }
+    ul{
+        margin: 2rem 0;
+    }
     
     footer {
         text-align: center;
@@ -97,6 +100,9 @@
     .quizzes-list {
         padding: 50px;
         background-color: #fff;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        margin: 2rem 1rem;
     }
     
     .quiz-item {
@@ -106,6 +112,7 @@
         border-radius: 5px;
         cursor: pointer;
         transition: transform 0.3s ease;
+        line-height: 4rem;
     }
     
     .login-section, .register-section {
