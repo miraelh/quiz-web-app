@@ -62,13 +62,13 @@ function loadQuizzes() {
         quizList.appendChild(quizItem);
       });
     }
-  }
+}
 
-  document.addEventListener('DOMContentLoaded', loadQuizzes);
+document.addEventListener('DOMContentLoaded', loadQuizzes);
 
 
 
-  authLinks.innerHTML = `
-      <a href="login.html" class="login-btn">Login</a>
-    `;
+authLinks.innerHTML = `
+   <a href="login.html" class="login-btn">Login</a>
+`;
   
