@@ -48,6 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function nextQuestion() {
+        handleAnswerSelection();
+        if (currentQuestion < quiz.questions.length - 1) {
+            currentQuestion++; 
+            loadQuestion();
+        }
+    }
+
     loadQuestion();
 
 
