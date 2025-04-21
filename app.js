@@ -1,5 +1,17 @@
 const sampleQuizzes = [
-    { name: "French Quizz" },
+    { name: "French Quizz" ,
+      questions: [
+        { question: "How do you say 'hello' in French?", 
+          options: ["Hola", "Bonjour", "Ciao"], 
+          correct: "Bonjour" },
+        { question: "What is the French word for 'book'?", 
+          options: ["Livre", "Libro", "Buch"], 
+          correct: "Livre" },
+        { question: "What is the capital of France?", 
+          options: ["Paris", "London", "Berlin"], 
+          correct: "Paris" }
+      ]
+    },
     { name: "Spanish Quiz" },
     { name: "German Quiz" },
 ];
