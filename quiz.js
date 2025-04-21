@@ -28,8 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 `).join('')}
             </div>
         `;
+        const submitButton = document.getElementById('submitQuiz');
     }     
-          
+    
+    function handleAnswerSelection() {
+        const selectedOption = document.querySelector('input[name="answer"]:checked');
+
+        if (selectedOption) {
+            const answer = selectedOption.value; 
+            const question = quiz.questions[currentQuestion]; 
+
+            userAnswers.push({
+                question: question.question,
+                selectedAnswer: answer,
+                correct: answer === question.correct 
+            });
+        }
+    }
+
     loadQuestion();
 
 
