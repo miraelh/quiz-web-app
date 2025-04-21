@@ -1,3 +1,5 @@
+localStorage.clear();
+
 const sampleQuizzes = [
     { name: "French Quizz" ,
       questions: [
