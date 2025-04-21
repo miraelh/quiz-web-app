@@ -2,7 +2,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Arial', sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
     body {
@@ -13,6 +13,7 @@
     
     h1, h2, h3 {
         color: #4CAF50;
+        padding: 0 0 30px 0;
     }
     
     a {
@@ -30,11 +31,12 @@
     }
     
     footer {
+        font-size: smaller;
         text-align: center;
         padding: 1rem;
-        background-color: #333;
-        color: white;
-        position: fixed;
+        background-color: #6464647e;
+        color: rgba(0, 0, 0, 0.397);
+        margin: 80px 0 0 0;
         width: 100%;
         bottom: 0;
     }
@@ -80,6 +82,7 @@
     }
       
     .firstpage {
+        margin: 2rem;
         background-size: cover;
         padding: 80px 0;
         color: rgb(0, 0, 0);
@@ -98,21 +101,24 @@
     }
 
     .quizzes-list {
-        padding: 50px;
+        padding: 40px;
         background-color: #fff;
         font-weight: bolder;
         font-size: 1.2rem;
-        margin: 2rem 1rem;
-        
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
     }
     
     .quiz-item {
         background-color: #f4f4f4;
         padding: 15px 55px;
-        margin: 15px 0 ;
+        margin: -15px 0 ;
         cursor: pointer;
         transition: transform 0.3s ease;
         line-height: 4rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
     
     .login-section, .register-section {
@@ -150,6 +156,7 @@
     }
 
     .submit-btn {
+        margin: 40px auto;
         background-color: #4CAF50;
         color: white;
         padding: 10px 20px;
@@ -221,20 +228,22 @@
     .quiz-section {
         padding: 50px 20px;
         background-color: #f4f7fa;
+        color: #000000;
     }
       
     .quiz-container {
-        max-width: 800px;
-        margin: 0 auto;
+        max-width: 750px;
+        margin: 10px auto;
         background-color: #ffffff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 40px;
-        border-radius: 8px;
+        border-radius: 16px;
         overflow: hidden;
     }
   
     .question {
         margin-bottom: 30px;
+        padding: 30px;
     }
       
       
