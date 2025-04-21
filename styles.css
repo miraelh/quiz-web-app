@@ -103,13 +103,13 @@
         font-weight: bolder;
         font-size: 1.2rem;
         margin: 2rem 1rem;
+        
     }
     
     .quiz-item {
         background-color: #f4f4f4;
-        padding: 15px;
-        margin: 10px 0;
-        border-radius: 5px;
+        padding: 15px 55px;
+        margin: 15px 0 ;
         cursor: pointer;
         transition: transform 0.3s ease;
         line-height: 4rem;
