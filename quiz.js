@@ -66,21 +66,22 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('quizQuestions').innerHTML = `<h2>${scoreMessage}</h2>`;
         document.getElementById('submitQuiz').style.display = 'none';
      
+        const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+        if (loggedInUser) {
+            const userScores = JSON.parse(localStorage.getItem('userScores')) || {};
+            userScores[loggedInUser.username] = userScores[loggedInUser.username] || [];
+            userScores[loggedInUser.username].push({
+                quiz: quiz.name,
+                score: userAnswers.filter(answer => answer.correct).length
+            });
+
+            console.log('Saving userScores:', userScores);  
+            localStorage.setItem('userScores', JSON.stringify(userScores));
+        }
     }
 
 
-    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-    if (loggedInUser) {
-        const userScores = JSON.parse(localStorage.getItem('userScores')) || {};
-        userScores[loggedInUser.username] = userScores[loggedInUser.username] || [];
-        userScores[loggedInUser.username].push({
-            quiz: quiz.name,
-            score: userAnswers.filter(answer => answer.correct).length
-        });
-
-        console.log('Saving userScores:', userScores);  
-        localStorage.setItem('userScores', JSON.stringify(userScores));
-    }
+    
 
     loadQuestion();
 
