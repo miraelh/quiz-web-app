@@ -12,8 +12,32 @@ const sampleQuizzes = [
           correct: "Paris" }
       ]
     },
-    { name: "Spanish Quiz" },
-    { name: "German Quiz" },
+    { name: "Spanish Quiz" ,
+      questions: [
+        { question: "How do you say 'thank you' in Spanish?", 
+          options: ["Gracias", "Merci", "Danke"], 
+          correct: "Gracias" },
+        { question: "What is the Spanish word for 'friend'?", 
+          options: ["Amigo", "Freund", "Copain"], 
+          correct: "Amigo" },
+        { question: "Which country speaks Spanish as its primary language?", 
+          options: ["Brazil", "Argentina", "Germany"], 
+          correct: "Argentina" }
+    ]
+    },
+    { name: "German Quiz" ,
+      questions: [
+        { question: "How do you say 'good morning' in German?", 
+          options: ["Guten Morgen", "Buenos Dias", "Buongiorno"], 
+          correct: "Guten Morgen" },
+        { question: "What is the German word for 'apple'?", 
+          options: ["Manzana", "Apfel", "Pomme"], 
+          correct: "Apfel" },
+        { question: "What is the capital of Germany?", 
+          options: ["Berlin", "Vienna", "Munich"], 
+          correct: "Berlin" }
+      ]
+    }
 ];
 
 if (!localStorage.getItem('quizzes')) {
