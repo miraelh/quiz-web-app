@@ -71,4 +71,8 @@ document.addEventListener('DOMContentLoaded', loadQuizzes);
 authLinks.innerHTML = `
    <a href="login.html" class="login-btn">Login</a>
 `;
+
+function startQuiz(quizIndex) {
+  window.location.href = 'quiz.html?quizIndex=' + quizIndex;
+}
   
